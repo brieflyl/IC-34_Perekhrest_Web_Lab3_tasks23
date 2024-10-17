@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed table</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+        a{
+            text-decoration: none;
+            color: #000000;
+        }
+        button{
+            margin: 10px;
+            font-size: 20px;
+            width: 200px;
+            height: 70px;
+            border: none;
+            border-radius: 10px;
+            background: #B2D7F9;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover{
+            background-color: #68a8e0;
+        }
+        table {
+            width: 800px;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        td {
+            border: 2px solid black;
+            text-align: center;
+        }
+        h1, h2 {
+            padding: 20px;
+            text-align: center;
+        }
+        .element1 {
+            width: 850px;
+            height: 100px;
+            background-color: yellow;
+        }
+        .inner1 {
+            width: 350px;
+            height: 60px;
+            background-color: white;
+            margin: 10px;
+        }
+        .element2 {
+            width: 200px;
+            height: 600px;
+            background-color: blue;
+        }
+        .element3 {
+            width: 200px;
+            height: 600px;
+            background-color: tomato;
+        }
+        .element4 {
+            width: 200px;
+            height: 600px;
+            background-color: white;
+        }
+        .element5 {
+            width: 200px;
+            height: 600px;
+            background-color: tomato;
+        }
+        .element6 {
+            width: 850px;
+            height: 100px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="../index.html"><button>Повернутися</button></a>
+        <h1>Фіксована таблична верстка</h1>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <td colspan="4" class="element1">
+                    <div class="inner1"><h2>1</h2></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="element2"><h2>2</h2></td>
+                <td class="element3"><h2>3</h2></td>
+                <td class="element4"><h2>4</h2></td>
+                <td class="element5"><h2>5</h2></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="element6"><h2>6</h2></td>
+            </tr>
+        </table>
+    </main>
+    <footer></footer>
+</body>
+</html>
